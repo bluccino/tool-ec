@@ -8,7 +8,7 @@
 #===============================================================================
 
   if [ "$*" == "-?" ] || [ "$*" == "--help" ] || [ "$*" == "--?" ]; then
-    echo   '  usage: ec ...         # (uncolored) echo ...'
+    echo   "  usage: ec ...         # (uncolored) echo ... (version `ec --version`)"
     echo   '         ec -r ...      # (red)'
     echo   '         ec -g ...      # (green)'
     echo   '         ec -y ...      # (yellow)'
@@ -28,6 +28,7 @@
       echo ''
     fi
     echo   '         ec -?          # show usage'
+    echo   '         ec --help      # comprehensive help'
     echo   '         ec --version   # print version'
     exit 0;
   fi
