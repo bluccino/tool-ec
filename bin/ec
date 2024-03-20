@@ -8,28 +8,28 @@
 #===============================================================================
 
   if [ "$*" == "-?" ] || [ "$*" == "--help" ] || [ "$*" == "--?" ]; then
-    echo '  usage: ec ...         # (uncolored) echo ...'
-    echo '         ec -r ...      # (red)'
-    echo '         ec -g ...      # (green)'
-    echo '         ec -y ...      # (yellow)'
-    echo '         ec -b ...      # (blue)'
-    echo '         ec -m ...      # (magenta)'
-    echo '         ec -c ...      # (cyan)'
-    echo '         ec -0 ...      # (no color)'
-    echo ''
-    echo '         ec +r          # switch to red     (continue with ec ...`)'
-    echo '         ec +g          # switch to green   (continue with ec ...)'
-    echo '         ec +y          # switch to yellow  (continue with ec ...)'
-    echo '         ec +b          # switch to blue    (continue with ec ...`)'
-    echo '         ec +m          # switch to magenta (continue with ec ...`)'
-    echo '         ec +c          # switch to cyan    (continue with ec ...`)'
-    echo '         ec +0          # disable color'
-    echo ''
-    echo '         ec -?          # show usage'
-    echo '         ec --version   # print version'
-    echo ''
-    echo '   see also: cl, ec'
-    exit 1;
+    echo   '  usage: ec ...         # (uncolored) echo ...'
+    echo   '         ec -r ...      # (red)'
+    echo   '         ec -g ...      # (green)'
+    echo   '         ec -y ...      # (yellow)'
+    echo   '         ec -b ...      # (blue)'
+    echo   '         ec -m ...      # (magenta)'
+    echo   '         ec -c ...      # (cyan)'
+    echo   '         ec -0 ...      # (no color)'
+    echo   ''
+    if [ "$*" != "-?" ]; then
+      echo '         ec +r          # switch to red     (continue with ec ...`)'
+      echo '         ec +g          # switch to green   (continue with ec ...)'
+      echo '         ec +y          # switch to yellow  (continue with ec ...)'
+      echo '         ec +b          # switch to blue    (continue with ec ...`)'
+      echo '         ec +m          # switch to magenta (continue with ec ...`)'
+      echo '         ec +c          # switch to cyan    (continue with ec ...`)'
+      echo '         ec +0          # disable color'
+      echo ''
+    fi
+    echo   '         ec -?          # show usage'
+    echo   '         ec --version   # print version'
+    exit 0;
   fi
 
 #===============================================================================
