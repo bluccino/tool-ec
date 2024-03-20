@@ -18,12 +18,12 @@
     echo   '         ec -0 ...      # (no color)'
     echo   ''
     if [ "$*" != "-?" ]; then
-      echo '         ec +r          # switch to red     (continue with ec ...`)'
+      echo '         ec +r          # switch to red     (continue with ec ...)'
       echo '         ec +g          # switch to green   (continue with ec ...)'
       echo '         ec +y          # switch to yellow  (continue with ec ...)'
-      echo '         ec +b          # switch to blue    (continue with ec ...`)'
-      echo '         ec +m          # switch to magenta (continue with ec ...`)'
-      echo '         ec +c          # switch to cyan    (continue with ec ...`)'
+      echo '         ec +b          # switch to blue    (continue with ec ...)'
+      echo '         ec +m          # switch to magenta (continue with ec ...)'
+      echo '         ec +c          # switch to cyan    (continue with ec ...)'
       echo '         ec +0          # disable color'
       echo ''
     fi
